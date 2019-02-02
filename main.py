@@ -55,7 +55,7 @@ def nn_model(X_train, Y_train, X_test, Y_test,
 
 
     print("Making predictions on test set...")
-    print(parameters)
+    # print(parameters)
     preds = predictions(X_test, parameters)
     trues = np.argmax(Y_test, axis=1)
     print("Test set accuracy = {}".format(accuracy_score(trues, preds)))
